@@ -7,7 +7,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./Components/Navbar";
 
 // Context
-import { UserContextProvider } from "./context/UserContext";
+import { UserContextProvider } from "./Context/UserContext";
 
 // Pages
 import Home from "./Pages/Home";
@@ -16,16 +16,16 @@ function App() {
  
   return (
     <>
-    <UserContextProvider>
-      <Router basename="/project-trial/">
-       <Navbar />
-       <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        </main>
-      </Router>
-    </UserContextProvider>
+      <UserContextProvider>
+        <Router basename="/project-trial/">
+          <Navbar />
+          <main>
+            <Routes>
+             <Route path="/" element={<Home />} />
+            </Routes>
+          </main>
+        </Router>
+      </UserContextProvider>
     </>
   )
 }
