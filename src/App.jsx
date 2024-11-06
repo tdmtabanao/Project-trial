@@ -17,7 +17,7 @@ function App() {
   return (
     <>
      <UserContextProvider>
-        <Router basename="/project-trial/">
+        <Router basename="/">
           <Navbar />
           <main>
             <Routes>
